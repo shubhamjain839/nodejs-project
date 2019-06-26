@@ -8,6 +8,6 @@ http.createServer(function (req,res){
     });
     fs.readFile('index.html',function (err,data){
         res.write(data);
-        res.end();
+        res.end(); //this method is depriciated
     });
 }).listen(8080);
